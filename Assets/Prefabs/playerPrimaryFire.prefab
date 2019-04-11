@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5009034803919410851}
   - component: {fileID: 4807510095180581646}
   - component: {fileID: 5387227919300600287}
+  - component: {fileID: 5549565125069158135}
   m_Layer: 0
   m_Name: playerPrimaryFire
-  m_TagString: Untagged
+  m_TagString: PLAYER_BULLET
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +102,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5387227919300600287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,3 +116,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxY: 0
+--- !u!60 &5549565125069158135
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583354143534560888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.12154304, y: 0.31642056}
+      - {x: 0.055709925, y: 0.3452568}
+      - {x: -0.10048344, y: 0.33764362}
+      - {x: -0.17524843, y: 0.2847638}
+      - {x: -0.17524311, y: 0.20333052}
+      - {x: -0.15762883, y: 0.12952042}
+      - {x: -0.015226485, y: -0.30428982}
+      - {x: 0.16667682, y: 0.25616264}

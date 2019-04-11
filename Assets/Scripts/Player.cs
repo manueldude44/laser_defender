@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -16,17 +17,24 @@ public class Player : MonoBehaviour
 
   #region Lifecycle methods
 
-  void Start()
+  private void Start()
   {
     SetupMoveBoundaries();
   }
 
-  void Update()
+  private void Update()
   {
     Move();
     CheckFire();
   }
 
+  private void OnTriggerEnter2D(Collider2D collision)
+  {
+    if (collision.gameObject.tag == TagConstants.ENEMY)
+    {
+      SceneManager.LoadScene(SceneConstants.GAME_OVER);
+    }
+  }
   #endregion
 
   private void Move()
