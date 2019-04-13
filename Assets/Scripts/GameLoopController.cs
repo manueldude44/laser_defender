@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameLoopController : MonoBehaviour
 {
-  [SerializeField] GameObject[] _enemeyPrefabs;
+  [SerializeField] private GameObject[] _enemeyPrefabs = new GameObject[2];
   [SerializeField] private int _level = 0;
   [SerializeField] private int _enemiesPerLevel = 0;
 
