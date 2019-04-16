@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2164722391103929720}
   - component: {fileID: 2164722391103929721}
   - component: {fileID: 2164722391103929723}
-  - component: {fileID: 1762137663}
   - component: {fileID: 1762137661}
   - component: {fileID: 1762137660}
   m_Layer: 0
@@ -101,23 +100,6 @@ MonoBehaviour:
   _projectileWaitTimer: 0.1
   _laserPrefab: {fileID: 583354143534560888, guid: 8ef5cf4957500f445a29c535995626eb,
     type: 3}
---- !u!114 &1762137663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2164722391103929670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a90b4cb55c0dd4b92ebd2bb1f39ca4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemeyPrefabs:
-  - {fileID: 6626111741622292728, guid: bebeeef0af52f0143acd6b8b6f368a91, type: 3}
-  - {fileID: 2264256513068697237, guid: 34e5652680bbefc47afbf5b87b374ecb, type: 3}
-  _level: 1
-  _enemiesPerLevel: 0
 --- !u!50 &1762137661
 Rigidbody2D:
   serializedVersion: 4

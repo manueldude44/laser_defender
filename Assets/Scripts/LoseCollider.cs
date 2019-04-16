@@ -5,8 +5,6 @@ public class LoseCollider : MonoBehaviour
 {
   private void OnTriggerStay2D(Collider2D collision)
   {
-    SceneManager.LoadScene(SceneConstants.GAME_OVER);
+    GameSceneManager.LoadGameOver();
   }
-
-  
 }

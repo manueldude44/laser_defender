@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
   {
     if (collision.gameObject.tag == TagConstants.ENEMY)
     {
-      SceneManager.LoadScene(SceneConstants.GAME_OVER);
+      GameSceneManager.LoadGameOver();
     }
   }
   #endregion
